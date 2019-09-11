@@ -13,6 +13,6 @@ RUN apk add --no-cache --virtual .build-deps ca-certificates wget && \
     apk del .build-deps
 
 COPY vue-storefront-api.sh /usr/local/bin/
-RUN chmod+x /usr/local/bin/vue-storefront-api.sh
+RUN chmod +x /usr/local/bin/vue-storefront-api.sh
 
 CMD ["vue-storefront-api.sh"]
